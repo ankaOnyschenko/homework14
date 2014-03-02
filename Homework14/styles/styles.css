@@ -1,0 +1,187 @@
+/*----------------------------------------------------------------------------------*/
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+html,body                       { width:100%; height:100%; }
+body                            { padding:0; margin:0; font:12px Tahoma, sans-serif; background:url(../images/bg2.jpg); color:#000; }
+div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,checkbox,input,textarea {
+	padding:0;
+	margin:0;
+	outline:none;
+	list-style:none;
+}
+select, input, textarea        { font-size:12px; vertical-align:middle; }
+textarea                       { vertical-align:top; }
+:focus                         { outline:none; }
+input[type=submit]             { cursor:pointer; }
+img, fieldset                  { border:0; }
+table                          { border-collapse:collapse; border-spacing:0; }
+a:link, a:visited              { font:12px Trebuchet MS, myriad Pro; color:#4b8bbf; text-decoration:none; }
+a:hover                        { text-decoration:underline; }
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------DEFAULT CLASSES------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.float-r           	           { float:right !important; }
+.float-l                       { float:left !important; }
+.no-float                      { float:none !important; }
+.no-border                     { border:0 !important; }
+.no-bg                         { background:none !important; }
+.no-margin                     { margin:0 !important; }
+.no-padding                    { padding:0 !important; }
+.no-display                    { display:none !important; }
+.display                       { display:block !important; }
+.inline                        { display:inline !important; }
+.overflow                      { overflow:hidden !important; }
+.align-r                       { text-align:right !important; }
+.align-l                       { text-align:left !important; }
+.align-c                       { text-align:center !important; }
+.clear                         { clear:both; }
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------WRAPPER--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.wrapper {
+	overflow: hidden;
+	width: 780px;
+	margin: auto;
+	background: #fff
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------HEADER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.header {
+	overflow: hidden;
+	width: 771px;
+	height: 194px;
+	margin: 14px auto 14px;
+	background: url(../images/bg_header.png)
+}
+h1 {
+	overflow: hidden;
+	width: 305px;
+	height: 115px;
+	margin: 40px 426px 40px 40px;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------NAV------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------CONTENT--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.content {
+	overflow: hidden;
+	width: 738px;
+	margin: auto;
+	padding-left: 33px;
+}
+h2 {
+	width: 689px;
+	height: 20px;
+	margin-bottom: 7px;
+	padding: 8px 0px 10px 15px;
+	background: #fcf1f7;	
+	font: italic 18px georgia;
+	color: #d777b7;
+}
+.content a, span {
+    /*не пиши а лінк просто а*/
+	display: block;
+}
+.popular  span {
+	text-align: center;
+}
+.arrow {
+	background: url(../images/tr.png) 78px no-repeat;
+}
+.interesting_articles li {
+	width: 685px;
+	margin-bottom: 15px;
+	font: 13px Trebuchet MS;
+	color: #4f4f4f;
+}
+.interesting_articles li:nth-child(1),.interesting_articles li:nth-child(2) {
+	border-bottom: 1px solid #fcf1f7;
+}
+.interesting_articles a {
+	margin-top: 10px;
+}
+h3 {
+	width: 689px;
+	height: 20px;
+	padding: 8px 0px 10px 15px;
+	background: #ebf4fb;
+	font: italic 18px georgia;
+	color: #4b8bbf;
+}
+.interesting_articles li, .popular li {
+	display: inline-block;
+}
+.content ul.popular li {
+	margin: 12px 4px 0 0;
+}
+.content li.news {
+	display: inline-block;
+	overflow: hidden;
+	width: 354px;
+	margin-top: 16px;
+	background: #ebf4fb;	
+}
+.content li.articles {
+	display: inline-block;
+	overflow: hidden;
+	width: 331px;
+	margin: 16px 0 0 18px;
+	background: #ebf4fb;
+}
+	
+li.news li a, li.articles li a {
+	margin: 2px 0 0 18px;
+	font: 12px Trebuchet MS;
+	color: #4f4f4f;
+}
+li.news a, li.articles a {
+	margin: 15px 0 0 18px;
+}
+.modal {
+    display: none;
+	overflow: hidden;
+    position: fixed;
+    width: 400px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -200px;
+    background: gray;
+}
+.modal.active {
+    display: block;
+}
+.modal a {
+	font-size: 20px;
+	color: black;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------SIDEBAR--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------FOOTER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.footer {
+	overflow: hidden;
+	width: 738px;
+	margin: 56px auto 14px ;
+	padding-left: 33px;
+	font: 11px Trebuchet MS;
+}
+.footer p {
+	margin-left: 128px;
+	color: #d97fbb;
+}
+.footer li {
+	display: inline;
+	margin-left: 8px;
+}
+.footer a {
+	color: #afafaf;
+}
