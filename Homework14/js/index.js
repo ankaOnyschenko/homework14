@@ -1,9 +1,9 @@
 jQuery(document).ready(function($){
 
     $('body').append('<div class="modal">' +
-        '<a class="left" href="#">left</a>' +
+        '<a class="left" href="#">&#8656;</a>' +
         '<img src=""/>' +
-        '<a class="right" href="#">right</a>' +
+        '<a class="right" href="#">&#8658;</a>' +
         '</div>');
 
    var popup = $('.modal');
@@ -17,8 +17,9 @@ jQuery(document).ready(function($){
         var mySrc = $(this).find('img').attr('src');
         var parentPrev = $(this).parent().prev();
         var parentNext = $(this).parent().next();
-
-        if (parentPrev.length > 0) {
+		var currentImg = $(this).find('img');
+       
+	   if (parentPrev.length > 0) {
             preImg = parentPrev.find('img');
         } else {
             preImg = img.last();
@@ -42,25 +43,25 @@ jQuery(document).ready(function($){
 
     });
 
-    $('.modal .left').click(function(e){
-        e.preventDefault();
+    $('.modal .left').click(function(){
+        event.preventDefault();
 
         popup.find('img').attr('src', preImg.attr('src'));
-        currentImg = preImg;
-        nextImg = currentImg.parent().parent().next().find('img');
+        nextImg = currentImg;
+		currentImg = preImg;
         preImg = currentImg.parent().parent().prev().find('img');
         if (preImg.length === 0) {
             preImg = img.last();
         }
     });
 
-    $('.modal .right').click(function(e){
-        e.preventDefault();
+    $('.modal .right').click(function(){
+        event.preventDefault();
 
         popup.find('img').attr('src', nextImg.attr('src'));
+		preImg = currentImg;
         currentImg = nextImg;
         nextImg = currentImg.parent().parent().next().find('img');
-        preImg = currentImg.parent().parent().prev().find('img');
         if (nextImg.length === 0) {
             nextImg = img.first();
         }
